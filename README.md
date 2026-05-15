@@ -50,7 +50,7 @@ O objetivo deste projeto é reunir componentes reutilizáveis que acelerem a cri
 Clone o repositório:
 
 ```bash
-git clone https://github.com/MrBiTs/mrbits-ai-starforge.git
+git clone https://github.com/mrbitsdcf/mrbits-ai-starforge.git
 cd mrbits-ai-starforge
 ```
 
