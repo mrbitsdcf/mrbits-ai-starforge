@@ -1,0 +1,17 @@
+region: __REGION__
+secondary_region: __SECONDARY_REGION__
+project_name: __PROJECT_KEY__
+
+auth:
+  method: __AUTH_METHOD__
+  profile: __PROFILE__
+  account: __ACCOUNT__
+  assume_role:
+    role_arn: __ROLE_ARN__
+    session_name: __PROJECT_KEY__-__ENVIRONMENT__
+    external_id:
+
+tags:
+  environment: __ENVIRONMENT__
+  project: __PROJECT_TAG__
+  owner: __OWNER__

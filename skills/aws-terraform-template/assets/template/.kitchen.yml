@@ -1,0 +1,24 @@
+---
+driver:
+  name: terraform
+
+provisioner:
+  name: terraform
+  command_timeout: 1800
+
+transport:
+  name: ssh
+
+verifier:
+  name: terraform
+
+platforms:
+  - name: local
+
+suites:
+  - name: default
+    verifier:
+      systems:
+        - name: local
+          backend: local
+
