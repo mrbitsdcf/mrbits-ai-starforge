@@ -20,6 +20,7 @@ O objetivo deste projeto é reunir componentes reutilizáveis que acelerem a cri
 | Artefato | Tipo | Caminho | Descrição |
 | --- | --- | --- | --- |
 | AWS Terraform Template | Skill | [`skills/aws-terraform-template`](skills/aws-terraform-template/) | Skill para criar um repositório Terraform AWS mínimo, opinativo e pronto para agentes como Codex, Claude Code, Kiro e Antigravity. |
+| Claude Fable 5 | Prompt | [`prompts/CLAUDE-FABLE-5.md`](prompts/CLAUDE-FABLE-5.md) | Prompt de sistema para uma superfície chamada Claude Fable 5, com regras de produto, segurança, tom, bem-estar do usuário, cutoff de conhecimento, memória, artifacts e MCP Apps. |
 | Prompt Guardrails | Skill | [`skills/prompt-guardrails`](skills/prompt-guardrails/) | Guardrails para LLMs — proteção contra injection, design patterns de prompts, debate multiagente, RaR e validação programática com Guardrails AI. Baseada no livro "Engenharia de Prompts II" (Sandeco, 2025). |
 | Prompt Engineering Fundamentals | Skill | [`skills/prompt-engineering-fundamentals`](skills/prompt-engineering-fundamentals/) | Engenharia de Prompts fundamentais — técnicas básicas, prompt interativo, níveis de controle, CoT, CoVe, KD-CoT e redução de alucinações com autorreflexão. Baseada no livro "Prompts em Ação" (Sandeco, 2024). |
 | Skills | Coleção | [`skills/`](skills/) | Diretório para skills reutilizáveis com instruções, scripts, assets e documentação própria. |
@@ -37,6 +38,7 @@ O objetivo deste projeto é reunir componentes reutilizáveis que acelerem a cri
 |   +-- DISTRIBUTION.md
 +-- mcps/
 +-- prompts/
+|   +-- CLAUDE-FABLE-5.md
 +-- skills/
 |   +-- aws-terraform-template/
 |   +-- prompt-engineering-fundamentals/
