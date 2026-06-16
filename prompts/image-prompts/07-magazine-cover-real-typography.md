@@ -37,3 +37,20 @@ caption tucks into lower-left. Poster ratio 3:4.
 
 MOOD: Quiet, weathered, slightly melancholic.
 ```
+
+## Expected Output
+
+A vertical (3:4) editorial magazine cover illustration, with carved wood-grain typography ("NORTH WIND") in the upper third, a woman in coastal attire in the center/lower two-thirds, and a small serif caption in the lower-left corner. Quiet, weathered, slightly melancholic aesthetic.
+
+## Limitations
+
+- No upload required; the prompt describes a fictional subject.
+- The wood-grain tree-ring typography is complex — models may simplify the internal letter details.
+- In-image text ("NORTH WIND", caption) may not be 100% legible depending on the model used.
+- To adapt the theme, edit the TITLE TYPOGRAPHY, SUBJECT, and LOWER LEFT CAPTION sections.
+
+## Examples
+
+**Prompt usage:** Paste the prompt into an image generator with no additional upload.
+
+**Expected result:** Vertical cover with "NORTH WIND" headline in serif letters with carved-wood texture, 32-year-old woman in wool sweater and leather jacket under overcast coastal lighting, and "Issue No. 17 — Heirloom Wool, Borrowed Boats." text in the lower-left corner.

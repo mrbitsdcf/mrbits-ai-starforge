@@ -29,3 +29,22 @@ a retail aisle.
 
 ASPECT RATIO: 3:4, vertical.
 ```
+
+## Expected Output
+
+A photorealistic image of an action figure inside a blister pack (sealed plastic bubble over printed cardboard), in vertical 3:4 format. The figure should maintain a faithful likeness of the person in the input photo, with miniaturized accessories and toy-store shelf lighting.
+
+## Limitations
+
+- Requires a front-facing input photo with reasonable lighting; profile shots or heavy shadows may produce inconsistent results.
+- The name and tagline in the packaging header are hard-coded in the prompt — manual editing is needed to customize.
+- Image generation models may struggle with legible text on the card and accessories.
+- Results vary depending on the model used (GPT-4o, DALL·E, Midjourney, etc.).
+
+## Examples
+
+**Input:** Front-facing photo of a female developer wearing a black t-shirt and prescription glasses.
+
+**Prompt usage:** Replace `"JERRY — SENIOR iOS DEV"` with `"ANA — STAFF ENGINEER"` and adapt accessories (e.g., swap MacBook Pro for a mechanical keyboard).
+
+**Expected result:** A 3:4 image with the "Ana" action figure in a neutral pose, sealed in a blister pack with yellow/red packaging and the adapted accessories visible alongside.

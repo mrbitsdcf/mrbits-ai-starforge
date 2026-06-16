@@ -34,3 +34,20 @@ CONSTRAINTS:
 - Hairline strokes only. Geometric. Modernist.
 - All text crisp and exactly readable.
 ```
+
+## Expected Output
+
+A logo presentation sheet image on pure white background, with the primary mark ("NORTHERN STILL") in forest green (#1F3A2E) at the top (geometric coffee bean symbol + geometric sans-serif wordmark) and a smaller monochrome variant in black below. Minimalist style, no gradients, shadows, or decorative illustrations.
+
+## Limitations
+
+- No upload required; the prompt describes the full visual identity.
+- Typographic precision (letter-spacing, alignment) is highly model-dependent — manual refinement may be needed.
+- The geometric symbol (two overlapping crescents, hairline) is subtle and may be simplified or distorted by some models.
+- To adapt for another brand, edit COMPANY, INDUSTRY, AUDIENCE, and the PRIMARY MARK description.
+
+## Examples
+
+**Prompt usage:** Paste the prompt into an image generator with no additional upload.
+
+**Expected result:** A presentation sheet with a centered logo — hairline coffee bean symbol to the left of the "NORTHERN STILL" wordmark in all caps, forest green on white. Below, the same composition in solid black, smaller. No additional decorative elements.

@@ -1,34 +1,34 @@
-# Política de branches
+# Branch Policy
 
-Este repositório usa um fluxo simples com duas branches permanentes:
+This repository uses a simple flow with two permanent branches:
 
-| Branch | Uso | Política |
+| Branch | Purpose | Policy |
 | --- | --- | --- |
-| `main` | Linha estável e base de releases públicas. | Protegida; não aceita pushes diretos. Mudanças entram por pull request. |
-| `develop` | Integração de mudanças antes de release. | Aceita branches de feature, correção e documentação. |
+| `main` | Stable line and base for public releases. | Protected; does not accept direct pushes. Changes enter via pull request. |
+| `develop` | Integration of changes before release. | Accepts feature, fix, and documentation branches. |
 
-## Regras para `main`
+## Rules for `main`
 
-- Push direto para `main` não é permitido.
-- Force push não é permitido.
-- Exclusão da branch não é permitida.
-- Alterações devem passar por pull request.
-- A proteção deve se aplicar também a administradores quando suportado pelo GitHub.
+- Direct push to `main` is not allowed.
+- Force push is not allowed.
+- Branch deletion is not allowed.
+- Changes must go through a pull request.
+- Protection should also apply to administrators when supported by GitHub.
 
-## Fluxo recomendado
+## Recommended Workflow
 
-1. Crie uma branch a partir de `develop`.
-2. Faça commits pequenos e documentados.
-3. Abra pull request para `develop`.
-4. Promova `develop` para `main` por pull request de release.
+1. Create a branch from `develop`.
+2. Make small, documented commits.
+3. Open a pull request to `develop`.
+4. Promote `develop` to `main` via a release pull request.
 
-## Nomes de branch
+## Branch Names
 
-Use nomes curtos em `kebab-case`:
+Use short names in `kebab-case`:
 
 ```text
-feature/nova-skill
-fix/template-terraform
+feature/new-skill
+fix/terraform-template
 docs/branch-policy
 security/mcp-permissions
 ```

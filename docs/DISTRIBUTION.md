@@ -1,43 +1,43 @@
-# Distribuição e versionamento
+# Distribution and Versioning
 
-Este repositório distribui artefatos para agentes de IA por meio de branches, tags e releases do GitHub.
+This repository distributes AI agent artifacts via GitHub branches, tags, and releases.
 
-## Canais
+## Channels
 
-| Canal | Uso |
+| Channel | Purpose |
 | --- | --- |
-| `main` | Linha principal estável para consumo direto. |
-| Tags | Marcos versionados, por exemplo `v0.1.0`. |
-| Releases | Notas públicas de alterações e artefatos destacados. |
+| `main` | Stable mainline for direct consumption. |
+| Tags | Versioned milestones, e.g., `v0.1.0`. |
+| Releases | Public change notes and highlighted artifacts. |
 
-## Versionamento
+## Versioning
 
-Use versionamento semântico para releases do repositório:
+Use semantic versioning for repository releases:
 
-- `MAJOR`: mudanças incompatíveis em estrutura, instalação ou contrato de artefatos.
-- `MINOR`: novos artefatos ou funcionalidades compatíveis.
-- `PATCH`: correções, documentação e melhorias compatíveis.
+- `MAJOR`: breaking changes in structure, installation, or artifact contracts.
+- `MINOR`: new compatible artifacts or features.
+- `PATCH`: compatible fixes, documentation, and improvements.
 
-Artefatos individuais podem ter versionamento próprio no README quando necessário.
+Individual artifacts may have their own versioning in their README when needed.
 
-## Empacotamento
+## Packaging
 
 ### Skills
 
-Skills devem ficar em:
+Skills must reside in:
 
 ```text
-skills/<nome-da-skill>/
+skills/<skill-name>/
 ```
 
-Estrutura mínima:
+Minimum structure:
 
 ```text
 SKILL.md
 README.md
 ```
 
-Estrutura opcional:
+Optional structure:
 
 ```text
 agents/
@@ -49,42 +49,42 @@ tests/
 
 ### Prompts
 
-Prompts simples podem ser arquivos Markdown:
+Simple prompts can be Markdown files:
 
 ```text
-prompts/<nome-do-prompt>.md
+prompts/<prompt-name>.md
 ```
 
-Prompts com exemplos, assets ou testes devem usar diretório próprio:
+Prompts with examples, assets, or tests should use their own directory:
 
 ```text
-prompts/<nome-do-prompt>/
+prompts/<prompt-name>/
 ```
 
 ### MCPs
 
-MCPs devem ficar em:
+MCPs must reside in:
 
 ```text
-mcps/<nome-do-mcp>/
+mcps/<mcp-name>/
 ```
 
-Cada MCP deve documentar instalação, execução, configuração, permissões, variáveis de ambiente e validação local.
+Each MCP must document installation, execution, configuration, permissions, environment variables, and local validation.
 
-## Checklist de release
+## Release Checklist
 
-Antes de publicar uma release:
+Before publishing a release:
 
-1. Confirme que o README raiz lista os artefatos novos ou removidos.
-2. Confirme que cada artefato alterado tem documentação própria.
-3. Rode as validações aplicáveis.
-4. Verifique que não há segredos, tokens ou arquivos locais.
-5. Escreva release notes com artefatos alterados e impacto para usuários.
+1. Confirm that the root README lists new or removed artifacts.
+2. Confirm that each changed artifact has its own documentation.
+3. Run the applicable validations.
+4. Verify that there are no secrets, tokens, or local files.
+5. Write release notes with changed artifacts and user impact.
 
-## Instalação por consumidores
+## Consumer Installation
 
-Consumidores podem usar o repositório de três formas:
+Consumers can use the repository in three ways:
 
-- Clonar o repositório e referenciar os artefatos localmente.
-- Copiar um diretório de artefato para a ferramenta desejada.
-- Instalar diretamente a partir de um caminho GitHub quando a ferramenta suportar esse formato.
+- Clone the repository and reference artifacts locally.
+- Copy an artifact directory to the desired tool.
+- Install directly from a GitHub path when the tool supports that format.

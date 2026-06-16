@@ -1,46 +1,46 @@
-# Política de segurança
+# Security Policy
 
-## Versões suportadas
+## Supported Versions
 
-Este repositório distribui artefatos versionados por tags e releases do GitHub. A versão suportada é a release pública mais recente.
+This repository distributes artifacts versioned via GitHub tags and releases. The supported version is the most recent public release.
 
-## Como relatar uma vulnerabilidade
+## How to Report a Vulnerability
 
-Não abra uma issue pública para:
+Do not open a public issue for:
 
-- Segredos ou credenciais expostos.
-- Vulnerabilidades exploráveis.
-- MCPs com permissões excessivas ou vazamento de dados.
-- Prompts ou skills que induzam execução insegura.
+- Exposed secrets or credentials.
+- Exploitable vulnerabilities.
+- MCPs with excessive permissions or data leaks.
+- Prompts or skills that induce unsafe execution.
 
-Use o recurso de private vulnerability reporting do GitHub, quando disponível, ou entre em contato de forma privada com os mantenedores.
+Use GitHub's private vulnerability reporting feature when available, or contact the maintainers privately.
 
-Inclua:
+Include:
 
-- Artefato afetado.
-- Versão, commit ou branch.
-- Passos para reproduzir.
-- Impacto esperado.
-- Mitigação sugerida, se houver.
+- Affected artifact.
+- Version, commit, or branch.
+- Steps to reproduce.
+- Expected impact.
+- Suggested mitigation, if any.
 
-## Escopo
+## Scope
 
-Estão no escopo:
+In scope:
 
-- Scripts e templates incluídos no repositório.
-- Instruções de agentes que possam executar ações perigosas.
-- Configurações de MCP que acessem dados, rede, arquivos ou credenciais.
-- Exemplos que possam vazar dados sensíveis.
+- Scripts and templates included in the repository.
+- Agent instructions that could execute dangerous actions.
+- MCP configurations that access data, network, files, or credentials.
+- Examples that could leak sensitive data.
 
-Fora do escopo:
+Out of scope:
 
-- Vulnerabilidades em serviços de terceiros não configurados por este repositório.
-- Uso indevido causado por alteração local fora dos artefatos publicados.
+- Vulnerabilities in third-party services not configured by this repository.
+- Misuse caused by local modifications outside the published artifacts.
 
-## Princípios de segurança
+## Security Principles
 
-- Nenhum artefato deve exigir credenciais reais no repositório.
-- Exemplos devem usar valores fictícios.
-- MCPs devem documentar permissões e variáveis de ambiente.
-- Scripts devem evitar ações destrutivas por padrão.
-- Templates devem privilegiar configurações seguras.
+- No artifact should require real credentials in the repository.
+- Examples must use placeholder values.
+- MCPs must document permissions and environment variables.
+- Scripts must avoid destructive actions by default.
+- Templates must favor secure configurations.

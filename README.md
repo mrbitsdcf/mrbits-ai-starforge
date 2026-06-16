@@ -1,33 +1,34 @@
 # MrBiTs AI Starforge
 
-Repositório público para desenvolvimento, curadoria e distribuição de artefatos para agentes de IA mantidos pelo MrBiTs.
+Public repository for developing, curating, and distributing AI agent artifacts maintained by MrBiTs.
 
-O objetivo deste projeto é reunir componentes reutilizáveis que acelerem a criação de agentes, automações e fluxos assistidos por IA. Aqui ficam skills, prompts, MCPs, templates e materiais de suporte com documentação suficiente para uso direto, revisão pública e contribuição da comunidade.
+The goal of this project is to bring together reusable components that accelerate the creation of agents, automations, and AI-assisted workflows. Here you'll find skills, prompts, MCPs, templates, and supporting materials with enough documentation for direct use, public review, and community contribution.
 
-## Sumário
+## Table of Contents
 
-- [Artefatos](#artefatos)
-- [Estrutura do repositório](#estrutura-do-repositório)
-- [Como usar](#como-usar)
-- [Como contribuir](#como-contribuir)
-- [Padrões de qualidade](#padrões-de-qualidade)
+- [Artifacts](#artifacts)
+- [Repository Structure](#repository-structure)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Quality Standards](#quality-standards)
 - [Branches](#branches)
-- [Distribuição](#distribuição)
-- [Licença](#licença)
+- [Distribution](#distribution)
+- [License](#license)
 
-## Artefatos
+## Artifacts
 
-| Artefato | Tipo | Caminho | Descrição |
+| Artifact | Type | Path | Description |
 | --- | --- | --- | --- |
-| AWS Terraform Template | Skill | [`skills/aws-terraform-template`](skills/aws-terraform-template/) | Skill para criar um repositório Terraform AWS mínimo, opinativo e pronto para agentes como Codex, Claude Code, Kiro e Antigravity. |
-| Claude Fable 5 | Prompt | [`prompts/CLAUDE-FABLE-5.md`](prompts/CLAUDE-FABLE-5.md) | Prompt de sistema para uma superfície chamada Claude Fable 5, com regras de produto, segurança, tom, bem-estar do usuário, cutoff de conhecimento, memória, artifacts e MCP Apps. |
-| Prompt Guardrails | Skill | [`skills/prompt-guardrails`](skills/prompt-guardrails/) | Guardrails para LLMs — proteção contra injection, design patterns de prompts, debate multiagente, RaR e validação programática com Guardrails AI. Baseada no livro "Engenharia de Prompts II" (Sandeco, 2025). |
-| Prompt Engineering Fundamentals | Skill | [`skills/prompt-engineering-fundamentals`](skills/prompt-engineering-fundamentals/) | Engenharia de Prompts fundamentais — técnicas básicas, prompt interativo, níveis de controle, CoT, CoVe, KD-CoT e redução de alucinações com autorreflexão. Baseada no livro "Prompts em Ação" (Sandeco, 2024). |
-| Skills | Coleção | [`skills/`](skills/) | Diretório para skills reutilizáveis com instruções, scripts, assets e documentação própria. |
-| Prompts | Coleção | [`prompts/`](prompts/) | Diretório para prompts versionados, templates de instrução e superfícies especializadas para agentes. |
-| MCPs | Coleção | [`mcps/`](mcps/) | Diretório para servidores MCP, configurações, exemplos e documentação de integração. |
+| AWS Terraform Template | Skill | [`skills/aws-terraform-template`](skills/aws-terraform-template/) | Skill to create a minimal, opinionated Terraform AWS repository ready for agents like Codex, Claude Code, Kiro, and Antigravity. |
+| Claude Fable 5 | Prompt | [`prompts/CLAUDE-FABLE-5.md`](prompts/CLAUDE-FABLE-5.md) | System prompt for a surface called Claude Fable 5, with product rules, safety, tone, user well-being, knowledge cutoff, memory, artifacts, and MCP Apps. |
+| Image Prompts | Collection | [`prompts/image-prompts/`](prompts/image-prompts/) | 10 prompts for image generation and editing via multimodal models (action figure, doodles, stickers, Pixar 3D, isometric room, magazine cover, infographic, yearbook, logo). |
+| Prompt Guardrails | Skill | [`skills/prompt-guardrails`](skills/prompt-guardrails/) | Guardrails for LLMs — protection against injection, prompt design patterns, multi-agent debate, RaR, and programmatic validation with Guardrails AI. Based on "Engenharia de Prompts II" (Sandeco, 2025). |
+| Prompt Engineering Fundamentals | Skill | [`skills/prompt-engineering-fundamentals`](skills/prompt-engineering-fundamentals/) | Fundamental prompt engineering — basic techniques, interactive prompting, control levels, CoT, CoVe, KD-CoT, and hallucination reduction with self-reflection. Based on "Prompts em Ação" (Sandeco, 2024). |
+| Skills | Collection | [`skills/`](skills/) | Directory for reusable skills with instructions, scripts, assets, and self-contained documentation. |
+| Prompts | Collection | [`prompts/`](prompts/) | Directory for versioned prompts, instruction templates, and specialized agent surfaces. |
+| MCPs | Collection | [`mcps/`](mcps/) | Directory for MCP servers, configurations, examples, and integration documentation. |
 
-## Estrutura do repositório
+## Repository Structure
 
 ```text
 .
@@ -39,6 +40,7 @@ O objetivo deste projeto é reunir componentes reutilizáveis que acelerem a cri
 +-- mcps/
 +-- prompts/
 |   +-- CLAUDE-FABLE-5.md
+|   +-- image-prompts/
 +-- skills/
 |   +-- aws-terraform-template/
 |   +-- prompt-engineering-fundamentals/
@@ -51,74 +53,74 @@ O objetivo deste projeto é reunir componentes reutilizáveis que acelerem a cri
 +-- SUPPORT.md
 ```
 
-## Como usar
+## Usage
 
-Clone o repositório:
+Clone the repository:
 
 ```bash
 git clone https://github.com/mrbitsdcf/mrbits-ai-starforge.git
 cd mrbits-ai-starforge
 ```
 
-Para usar uma skill localmente no Codex, copie ou faça link simbólico do diretório desejado para o diretório de skills do Codex:
+To use a skill locally with Codex, copy or symlink the desired directory to Codex's skills directory:
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 ln -sfn "$PWD/skills/aws-terraform-template" "${CODEX_HOME:-$HOME/.codex}/skills/aws-terraform-template"
 ```
 
-Reinicie o Codex após instalar ou atualizar uma skill.
+Restart Codex after installing or updating a skill.
 
-Cada artefato deve ter documentação própria com instalação, uso, parâmetros, exemplos e validação. Consulte o README do artefato antes de executar scripts ou aplicar templates.
+Each artifact should have its own documentation covering installation, usage, parameters, examples, and validation. Check the artifact's README before running scripts or applying templates.
 
-## Como contribuir
+## Contributing
 
-Contribuições são bem-vindas. Antes de abrir um pull request:
+Contributions are welcome. Before opening a pull request:
 
-1. Leia [`CONTRIBUTING.md`](CONTRIBUTING.md).
-2. Use uma branch curta e descritiva.
-3. Documente o artefato criado ou alterado.
-4. Inclua exemplos de uso e validação.
-5. Preencha o template de pull request.
+1. Read [`CONTRIBUTING.md`](CONTRIBUTING.md).
+2. Use a short, descriptive branch name.
+3. Document the artifact you created or changed.
+4. Include usage examples and validation.
+5. Fill out the pull request template.
 
-Novos artefatos devem ser pequenos, revisáveis e independentes. Evite adicionar dependências ou automações globais sem uma justificativa clara.
+New artifacts should be small, reviewable, and independent. Avoid adding dependencies or global automations without a clear justification.
 
 ## Branches
 
-Este repositório usa `main` como branch estável e `develop` como branch de integração.
+This repository uses `main` as the stable branch and `develop` as the integration branch.
 
-- `main` é protegido e não aceita pushes diretos.
-- Mudanças para `main` devem passar por pull request.
-- `develop` recebe trabalho integrado antes de uma release.
-- Branches de contribuição devem partir de `develop`, salvo correções emergenciais.
+- `main` is protected and does not accept direct pushes.
+- Changes to `main` must go through a pull request.
+- `develop` receives integrated work before a release.
+- Contribution branches should start from `develop`, except for emergency fixes.
 
-## Padrões de qualidade
+## Quality Standards
 
-Todo artefato deve:
+Every artifact must:
 
-- Explicar para que serve e quando deve ser usado.
-- Declarar pré-requisitos e limitações.
-- Ter exemplos reproduzíveis.
-- Evitar segredos, tokens, dados privados ou identificadores de clientes.
-- Preferir formatos simples, portáveis e fáceis de revisar.
-- Ter validação manual ou automatizada proporcional ao risco.
+- Explain what it does and when it should be used.
+- Declare prerequisites and limitations.
+- Include reproducible examples.
+- Avoid secrets, tokens, private data, or customer identifiers.
+- Prefer simple, portable, easy-to-review formats.
+- Have manual or automated validation proportional to the risk.
 
-## Distribuição
+## Distribution
 
-As instruções de publicação, versionamento e empacotamento estão em [`docs/DISTRIBUTION.md`](docs/DISTRIBUTION.md).
+Publishing, versioning, and packaging instructions are in [`docs/DISTRIBUTION.md`](docs/DISTRIBUTION.md).
 
-Resumo:
+Summary:
 
-- Skills ficam em `skills/<nome-da-skill>/`.
-- Prompts ficam em `prompts/<nome-do-prompt>/` ou `prompts/<nome>.md`.
-- MCPs ficam em `mcps/<nome-do-mcp>/`.
-- Mudanças incompatíveis devem ser documentadas em release notes.
-- Releases públicas devem apontar quais artefatos foram alterados.
+- Skills go in `skills/<skill-name>/`.
+- Prompts go in `prompts/<prompt-name>/` or `prompts/<name>.md`.
+- MCPs go in `mcps/<mcp-name>/`.
+- Breaking changes must be documented in release notes.
+- Public releases must indicate which artifacts were changed.
 
-## Segurança
+## Security
 
-Para relatar vulnerabilidades, exposição de segredo ou comportamento perigoso, siga [`SECURITY.md`](SECURITY.md).
+To report vulnerabilities, secret exposure, or dangerous behavior, follow [`SECURITY.md`](SECURITY.md).
 
-## Licença
+## License
 
-Este repositório é distribuído sob a licença MIT. Consulte [`LICENSE`](LICENSE).
+This repository is distributed under the MIT license. See [`LICENSE`](LICENSE).

@@ -41,3 +41,20 @@ readable.
 
 ASPECT RATIO: 2:3, vertical.
 ```
+
+## Expected Output
+
+A vertical (2:3) infographic poster with modular card layout, sans-serif headline ("WHY YOUR APP IS SLOW"), 5 cards with icons, labels, and stat callouts in terracotta orange, on a pale cream background. Legible typography, modern editorial style with hairline rules between cards.
+
+## Limitations
+
+- No upload required; statistical data is fictional and illustrative.
+- Text legibility depends heavily on the image model — long text or statistics may become unreadable.
+- The modular 5-card layout may be interpreted differently by each model (sizing, positioning).
+- To adapt the theme, edit the headline, the 5 cards, and the footer with the data source.
+
+## Examples
+
+**Prompt usage:** Paste the prompt into an image generator with no additional upload.
+
+**Expected result:** Vertical A3 poster with cream background, "WHY YOUR APP IS SLOW" title at the top, 5 cards arranged (2+2+1) with minimalist icons, black labels, and percentages highlighted in terracotta orange, discreet footer at the bottom.

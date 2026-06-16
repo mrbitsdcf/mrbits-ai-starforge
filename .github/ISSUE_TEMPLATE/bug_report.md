@@ -1,39 +1,39 @@
 ---
 name: Bug report
-about: Relate um problema reproduzível em um artefato
+about: Report a reproducible problem in an artifact
 title: "[Bug]: "
 labels: bug
 assignees: ""
 ---
 
-## Artefato afetado
+## Affected Artifact
 
-Informe o caminho, por exemplo `skills/aws-terraform-template`.
+Provide the path, e.g., `skills/aws-terraform-template`.
 
-## Versão ou commit
+## Version or Commit
 
-Informe a branch, tag ou SHA.
+Provide the branch, tag, or SHA.
 
-## Ambiente
+## Environment
 
-- Sistema operacional:
-- Ferramenta/agente:
-- Versão da ferramenta, se relevante:
+- Operating system:
+- Tool/agent:
+- Tool version, if relevant:
 
-## Passos para reproduzir
+## Steps to Reproduce
 
 1.
 2.
 3.
 
-## Resultado esperado
+## Expected Result
 
-Descreva o comportamento esperado.
+Describe the expected behavior.
 
-## Resultado obtido
+## Actual Result
 
-Descreva o comportamento observado e inclua logs relevantes.
+Describe the observed behavior and include relevant logs.
 
-## Contexto adicional
+## Additional Context
 
-Inclua qualquer informação útil para investigação.
+Include any useful information for investigation.

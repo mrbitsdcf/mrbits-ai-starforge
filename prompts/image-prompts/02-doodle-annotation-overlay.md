@@ -28,3 +28,20 @@ Keep the overall aesthetic fun, expressive, and social-media-ready.
 
 High resolution, clean overlay, vibrant yet natural color harmony.
 ```
+
+## Expected Output
+
+The same input photo preserved in full, with a layer of hand-drawn doodles overlaid that interact with the main subject. Includes playful, context-aware handwritten text. Format preserves the original image's aspect ratio.
+
+## Limitations
+
+- Very dark photos or those with little negative space make doodle integration difficult.
+- Generated text is creative and random — there is no precise control over text content without editing the prompt.
+- Works best with well-defined subjects (food, objects, people on clean backgrounds); complex scenes may produce cluttered overlays.
+- The quality of "hand-drawn" strokes depends on the image model used.
+
+## Examples
+
+**Input:** Photo of a coffee cup on a wooden table with free space around it.
+
+**Expected result:** The same photo with doodles interacting with the cup — stylized steam lines, small hearts, and handwritten text like "morning fuel ☕" positioned in the table's negative space.

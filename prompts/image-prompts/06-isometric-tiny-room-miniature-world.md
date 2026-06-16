@@ -35,3 +35,20 @@ diorama cube.
 
 ASPECT RATIO: 1:1.
 ```
+
+## Expected Output
+
+A square (1:1) image of a 45° isometric 3D scene in blind-box/diorama style, showing an indie developer's bedroom at night. Soft render aesthetic (Cinema 4D/Blender), pastel palette, cute materials with rounded edges. The room "floats" over a gradient background, like a miniature cutout cube.
+
+## Limitations
+
+- No upload required, but the prompt is specific to the "indie dev bedroom" theme — for other scenarios, edit the SCENE CONTENTS section.
+- Very small details (text on the iMac screen, book titles) may not be legible.
+- Isometric style consistency depends on the model — some may distort the perspective or blend with a top-down view.
+- The pastel palette is hard-coded; for different tones, adjust the STYLE section.
+
+## Examples
+
+**Prompt usage:** Copy the prompt directly into an image generator (ChatGPT Images, Midjourney, etc.) with no upload needed.
+
+**Expected result:** A floating isometric cube with desk, loft bed, bookshelf, blue star-patterned rug, grey cat sleeping, and round window showing a starry sky. Warm lamp glow as key-light and cool moonlight as fill.

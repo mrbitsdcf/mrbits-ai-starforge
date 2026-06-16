@@ -1,18 +1,18 @@
-# Suporte
+# Support
 
-Use os canais abaixo conforme o tipo de solicitação.
+Use the channels below according to the type of request.
 
-| Necessidade | Canal |
+| Need | Channel |
 | --- | --- |
-| Bug reproduzível | Abra uma issue usando o template de bug. |
-| Novo artefato ou melhoria | Abra uma issue de feature request. |
-| Dúvida de uso | Abra uma discussion, se habilitada, ou uma issue com contexto suficiente. |
-| Vulnerabilidade | Siga `SECURITY.md`; não abra issue pública. |
+| Reproducible bug | Open an issue using the bug template. |
+| New artifact or improvement | Open a feature request issue. |
+| Usage question | Open a discussion (if enabled) or an issue with sufficient context. |
+| Vulnerability | Follow `SECURITY.md`; do not open a public issue. |
 
-Inclua sempre:
+Always include:
 
-- Artefato afetado.
-- Versão, commit ou branch.
-- Ambiente local, quando relevante.
-- Comando ou prompt usado.
-- Resultado esperado e resultado obtido.
+- Affected artifact.
+- Version, commit, or branch.
+- Local environment, when relevant.
+- Command or prompt used.
+- Expected result and actual result.
