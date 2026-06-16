@@ -1,7 +1,5 @@
 # Grid Pet Sticker Pack
 
-Source: [https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce](https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce)
-
 Category: Edit image prompt
 
 Input: 1 to 4 clear photos of the same pet/person, ideally with varied expressions (calm, mouth open, eyes closed, looking up, etc.).

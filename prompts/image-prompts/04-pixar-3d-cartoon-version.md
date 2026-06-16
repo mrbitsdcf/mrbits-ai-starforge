@@ -1,7 +1,5 @@
 # Pixar / 3D Cartoon Version
 
-Source: [https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce](https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce)
-
 Category: Edit image prompt
 
 Input: A full-body or three-quarter portrait. Clear lighting on the face.

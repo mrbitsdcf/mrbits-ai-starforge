@@ -1,7 +1,5 @@
 # Doodle Annotation Overlay
 
-Source: [https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce](https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce)
-
 Category: Edit image prompt
 
 Input: One photo. Works best on food, drinks, café tables, desks, OOTD flat-lays anything with a clear hero object and a bit of negative space for the doodles to live in.

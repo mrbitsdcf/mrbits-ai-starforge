@@ -1,7 +1,5 @@
 # Meet Your Younger Self →Cat Edition
 
-Source: [https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce](https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce)
-
 Category: Edit image prompt
 
 Input: Two photos of the same white cat — one from when it was a kitten (or younger age) and one recent photo. Front-facing photos work best for the most natural result.

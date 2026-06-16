@@ -1,7 +1,5 @@
 # 90s Yearbook Polaroid
 
-Source: [https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce](https://freedium-mirror.cfd/https://medium.com/codetodeploy/10-chatgpt-image-prompts-that-went-viral-36977b5222ce)
-
 Category: Generate image prompt
 
 Input: No upload required.
