@@ -1,63 +1,63 @@
 # Prompt Engineering Fundamentals Skill
 
-Skill de Engenharia de Prompts fundamentais, baseada no livro "Prompts em Ação: Engenharia de Prompts para Leigos" de Sandeco (2024).
+Fundamental prompt engineering skill, based on the book "Prompts em Ação: Engenharia de Prompts para Leigos" by Sandeco (2024).
 
-Domine a arte de criar prompts eficazes — do básico ao avançado — com técnicas práticas, templates reutilizáveis e processos iterativos.
+Master the art of creating effective prompts — from basic to advanced — with practical techniques, reusable templates, and iterative processes.
 
-## O Que Faz
+## What It Does
 
-- Ensina o processo iterativo de criação de prompts (escrever → testar → avaliar → refinar).
-- Aplica técnicas básicas: contexto, persona, delimitadores, exemplos (few-shot).
-- Gera personas automaticamente com a técnica da segunda pessoa.
-- Ativa o Prompt Interativo para refinamento colaborativo com a LLM.
-- Controla 9 dimensões do texto via escalas numéricas (complexidade, entonação, sentimento, perspectiva, foco, surpresa, detalhe, originalidade, abstração).
-- Aplica Chain-of-Thought (CoT) para raciocínio passo a passo.
-- Aplica Chain-of-Verification (CoVe) para verificação de fatos e redução de alucinações.
-- Aplica Knowledge-Driven CoT (KD-CoT) para decomposição guiada por conhecimento.
-- Reduz alucinações com Autorreflexão (perfis Idealista/Crítico em loops iterativos).
-- Depura prompts com o "prompt depurador" (lista ações sem executar).
+- Teaches the iterative prompt creation process (write → test → evaluate → refine).
+- Applies basic techniques: context, persona, delimiters, examples (few-shot).
+- Automatically generates personas using the second-person technique.
+- Activates the Interactive Prompt for collaborative refinement with the LLM.
+- Controls 9 text dimensions via numeric scales (complexity, tone, sentiment, perspective, focus, surprise, detail, originality, abstraction).
+- Applies Chain-of-Thought (CoT) for step-by-step reasoning.
+- Applies Chain-of-Verification (CoVe) for fact-checking and hallucination reduction.
+- Applies Knowledge-Driven CoT (KD-CoT) for knowledge-guided decomposition.
+- Reduces hallucinations with Self-Reflection (Idealist/Critic profiles in iterative loops).
+- Debugs prompts with the "prompt debugger" (lists actions without executing).
 
-## Técnicas Cobertas
+## Techniques Covered
 
-### 1. Fundamentos (Cap. 1)
-- O que é Engenharia de Prompts
-- Processo iterativo: definir objetivo → formular → testar → feedback → refinar
-- Elementos de um prompt eficaz (13 elementos)
-- Desafios éticos: viés, alucinação, privacidade, sustentabilidade
+### 1. Fundamentals (Ch. 1)
+- What is Prompt Engineering
+- Iterative process: define goal → formulate → test → feedback → refine
+- Elements of an effective prompt (13 elements)
+- Ethical challenges: bias, hallucination, privacy, sustainability
 
-### 2. Técnicas Básicas (Cap. 2)
-- **Simplicidade** — Navalha de Ockham: comece simples, itere
-- **Instruções claras** — Seja direto, específico, sem ambiguidade
-- **Contexto** — Forneça cenário, público, domínio, histórico
-- **Persona** — Defina papel, formação, tom, público do modelo
-- **Técnica da 2ª pessoa** — Gere persona automaticamente via LLM
-- **Delimitadores** — Tags XML para segmentar seções do prompt
-- **Exemplos (few-shot)** — Mostre formato, tom e conteúdo esperados
-- **Prompt depurador** — Liste ações sem executar para validar prompts
+### 2. Basic Techniques (Ch. 2)
+- **Simplicity** — Occam's Razor: start simple, iterate
+- **Clear instructions** — Be direct, specific, unambiguous
+- **Context** — Provide scenario, audience, domain, history
+- **Persona** — Define role, background, tone, audience for the model
+- **Second-person technique** — Automatically generate persona via LLM
+- **Delimiters** — XML tags to segment prompt sections
+- **Examples (few-shot)** — Show expected format, tone, and content
+- **Prompt debugger** — List actions without executing to validate prompts
 
-### 3. Prompt Interativo (Cap. 3)
-- Processo colaborativo com a LLM em múltiplas rodadas
-- 3 seções: Revisar prompt / Sugestões / Perguntas numeradas
-- Iteração até convergência do prompt ideal
-- Aplicável a qualquer domínio
+### 3. Interactive Prompt (Ch. 3)
+- Collaborative process with the LLM over multiple rounds
+- 3 sections: Review prompt / Suggestions / Numbered questions
+- Iteration until the ideal prompt converges
+- Applicable to any domain
 
-### 4. Níveis de Controle (Cap. 4)
-Escalas numéricas (1-10) para ajustar dimensões do texto:
-- Complexidade, Entonação, Sentimento
-- Perspectiva (1ª/2ª/3ª pessoa)
-- Foco no tópico, Surpresa, Detalhe
-- Originalidade, Abstração
+### 4. Control Levels (Ch. 4)
+Numeric scales (1-10) to adjust text dimensions:
+- Complexity, Tone, Sentiment
+- Perspective (1st/2nd/3rd person)
+- Topic focus, Surprise, Detail
+- Originality, Abstraction
 
-### 5. Cadeias de Pensamento (Cap. 5)
-- **Chain-of-Thought (CoT)** — Raciocínio passo a passo com exemplo demonstrativo
-- **CoT aplicado** — Medicina, Direito, Planejamento, Matemática
-- **Chain-of-Verification (CoVe)** — 4 etapas: resposta inicial → perguntas de verificação → respostas independentes → resposta final verificada
-- **Knowledge-Driven CoT (KD-CoT)** — Decomposição → raciocínio passo a passo → síntese com avaliação de limitações
+### 5. Chains of Thought (Ch. 5)
+- **Chain-of-Thought (CoT)** — Step-by-step reasoning with a demonstrative example
+- **Applied CoT** — Medicine, Law, Planning, Mathematics
+- **Chain-of-Verification (CoVe)** — 4 steps: initial answer → verification questions → independent answers → verified final answer
+- **Knowledge-Driven CoT (KD-CoT)** — Decomposition → step-by-step reasoning → synthesis with limitation assessment
 
-### 6. Redução de Alucinações (Cap. 6)
-- **Autorreflexão** — Dois perfis internos: Idealista (gera) + Crítico (analisa)
-- **Loops iterativos** — Múltiplas rodadas de geração e análise
-- **Convergência** — Parar quando a resposta estiver robusta e fundamentada
+### 6. Hallucination Reduction (Ch. 6)
+- **Self-Reflection** — Two internal profiles: Idealist (generates) + Critic (analyzes)
+- **Iterative loops** — Multiple rounds of generation and analysis
+- **Convergence** — Stop when the answer is robust and well-grounded
 
 ## Supported Agents
 
@@ -66,31 +66,31 @@ Escalas numéricas (1-10) para ajustar dimensões do texto:
 - Kiro
 - Antigravity
 
-## Instalação
+## Installation
 
-### Instalar Localmente
+### Install Locally
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R skills/prompt-engineering-fundamentals "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-### Instalar para Desenvolvimento
+### Install for Development
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 ln -sfn "$PWD/skills/prompt-engineering-fundamentals" "${CODEX_HOME:-$HOME/.codex}/skills/prompt-engineering-fundamentals"
 ```
 
-## Uso
+## Usage
 
-Invocar a skill:
+Invoke the skill:
 
 ```text
 /prompt-fundamentals
 ```
 
-Comandos específicos:
+Specific commands:
 
 ```text
 /prompt-fundamentals basic
@@ -104,48 +104,47 @@ Comandos específicos:
 /prompt-fundamentals persona
 ```
 
-## Exemplos de Uso
+## Usage Examples
 
-### Melhorar um prompt com técnicas básicas
+### Improve a prompt with basic techniques
 ```text
 /prompt-fundamentals basic
 ```
-Aplica contexto, persona, delimitadores e exemplos a um prompt existente.
+Applies context, persona, delimiters, and examples to an existing prompt.
 
-### Ativar o Gerador de Prompts
+### Activate the Prompt Generator
 ```text
 /prompt-fundamentals interactive
 ```
-Inicia o processo colaborativo de refinamento iterativo.
+Starts the collaborative iterative refinement process.
 
-### Aplicar Chain-of-Verification a uma afirmação
+### Apply Chain-of-Verification to a claim
 ```text
 /prompt-fundamentals cove
 ```
-Gera resposta, perguntas de verificação e resposta final verificada.
+Generates an answer, verification questions, and a verified final answer.
 
-### Depurar um prompt antes de usar
+### Debug a prompt before using it
 ```text
 /prompt-fundamentals debug
 ```
-Lista as ações que a LLM executaria sem executar de fato.
+Lists the actions the LLM would take without actually executing them.
 
-## Decisões de Design
+## Design Decisions
 
-- **Baseada em livro prático** — Todos os conceitos vêm de "Prompts em Ação" (Sandeco, 2024) com exemplos reais.
-- **Progressão didática** — Do simples ao complexo: básico → controle → CoT → redução de alucinações.
-- **Templates prontos** — Templates reutilizáveis para cada técnica.
-- **Escalas explícitas** — Sempre explicitar extremos das escalas numéricas nos prompts.
-- **Português brasileiro** — Skill documentada em pt-BR.
+- **Based on a practical book** — All concepts come from "Prompts em Ação" (Sandeco, 2024) with real examples.
+- **Didactic progression** — From simple to complex: basic → control → CoT → hallucination reduction.
+- **Ready-made templates** — Reusable templates for each technique.
+- **Explicit scales** — Always state the meaning of scale endpoints in prompts.
 
-## Referências Bibliográficas
+## References
 
 - Sandeco. "Prompts em Ação: Engenharia de Prompts para Leigos". Copyright © 2024.
 - Wei et al. "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" (2022).
 - Dhuliawala et al. "Chain-of-Verification Reduces Hallucination in Large Language Models" (2023).
 - Wang et al. "Knowledge-Driven CoT: Exploring Faithful Reasoning in LLMs".
 
-## Layout do Repositório
+## Repository Layout
 
 ```text
 prompt-engineering-fundamentals/

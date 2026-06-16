@@ -1,35 +1,35 @@
 ---
 name: Feature request
-about: Sugira um novo artefato ou melhoria
+about: Suggest a new artifact or improvement
 title: "[Feature]: "
 labels: enhancement
 assignees: ""
 ---
 
-## Problema
+## Problem
 
-Qual necessidade esta proposta resolve?
+What need does this proposal address?
 
-## Proposta
+## Proposal
 
-Descreva a mudança sugerida.
+Describe the suggested change.
 
-## Tipo de artefato
+## Artifact Type
 
 - [ ] Skill
 - [ ] Prompt
 - [ ] MCP
-- [ ] Documentação
-- [ ] Outro
+- [ ] Documentation
+- [ ] Other
 
-## Uso esperado
+## Expected Usage
 
-Mostre um exemplo de como a pessoa usuária usaria isso.
+Show an example of how a user would use this.
 
-## Alternativas consideradas
+## Alternatives Considered
 
-Liste alternativas avaliadas, se houver.
+List evaluated alternatives, if any.
 
-## Riscos ou limitações
+## Risks or Limitations
 
-Informe dependências, permissões, compatibilidade ou riscos de segurança.
+Provide information about dependencies, permissions, compatibility, or security risks.

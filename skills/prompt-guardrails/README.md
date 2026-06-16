@@ -1,61 +1,61 @@
 # Prompt Guardrails Skill
 
-Skill especializada em Guardrails para LLMs, baseada no livro "Engenharia de Prompts II – Guardrails" de Sandeco (2025).
+Specialized skill in Guardrails for LLMs, based on the book "Engenharia de Prompts II – Guardrails" by Sandeco (2025).
 
-Proteja sistemas de IA controlando entradas e filtrando saídas — mantendo modelos de linguagem dentro dos limites definidos.
+Protect AI systems by controlling inputs and filtering outputs — keeping language models within defined boundaries.
 
-## O Que Faz
+## What It Does
 
-- Gera prompts com guardrails de segurança contra prompt injection, jailbreak e manipulação.
-- Aplica Prompt Design Patterns (26 padrões) para estruturar interações eficazes.
-- Implementa Abstain-QA para abstenção responsável quando há incerteza.
-- Configura debates multiagente com feedback humano como guardrail.
-- Aplica Rephrase and Respond (RaR) para reformulação inteligente de perguntas.
-- Gera código Python com a biblioteca Guardrails AI para validação programática.
-- Protege contra vazamento de dados sensíveis (PII), conteúdo ofensivo e alucinações.
+- Generates prompts with security guardrails against prompt injection, jailbreak, and manipulation.
+- Applies Prompt Design Patterns (26 patterns) to structure effective interactions.
+- Implements Abstain-QA for responsible abstention when there is uncertainty.
+- Configures multi-agent debates with human feedback as a guardrail.
+- Applies Rephrase and Respond (RaR) for intelligent question reformulation.
+- Generates Python code with the Guardrails AI library for programmatic validation.
+- Protects against sensitive data leakage (PII), offensive content, and hallucinations.
 
-## Técnicas Cobertas
+## Techniques Covered
 
-### 1. Guardrails Conceituais
-- **Abstain-QA** — Modelo se abstém quando não tem certeza, evitando alucinações.
-- **Inject Detector** — Separa análise de segurança da execução, bloqueando manipulações.
-- **Registro de Preferências** — Memória contextual para personalização adaptativa.
-- **Decisão e Abstenção** — Reconhecer limites do conhecimento e agir com prudência.
+### 1. Conceptual Guardrails
+- **Abstain-QA** — Model abstains when uncertain, avoiding hallucinations.
+- **Inject Detector** — Separates security analysis from execution, blocking manipulations.
+- **Preference Registry** — Contextual memory for adaptive personalization.
+- **Decision and Abstention** — Recognizing knowledge limits and acting prudently.
 
-### 2. Prompt Design Patterns (26 padrões)
-Organizados em 7 categorias:
-- Concisão e Clareza (Direct, Affirmative, Penalty, Emphasize)
-- Público-Alvo e Contexto (Audience, Natural, Persona)
-- Orientação e Estrutura (Task Breakdown, Clarity, Format, Step-by-Step, Primer)
-- Exemplos e Incentivo (Few-Shot Example, Reward, Start Cue)
-- Controle de Estilo (Style Keeper, Mimic Style, Style Guidelines)
-- Especificidade (Imperative, Unbiased, Teach-and-Test, CoT Combo)
-- Tarefas Técnicas (Delimiters, Detailed Output, Automated Code Generation)
+### 2. Prompt Design Patterns (26 patterns)
+Organized in 7 categories:
+- Conciseness and Clarity (Direct, Affirmative, Penalty, Emphasize)
+- Audience and Context (Audience, Natural, Persona)
+- Guidance and Structure (Task Breakdown, Clarity, Format, Step-by-Step, Primer)
+- Examples and Incentive (Few-Shot Example, Reward, Start Cue)
+- Style Control (Style Keeper, Mimic Style, Style Guidelines)
+- Specificity (Imperative, Unbiased, Teach-and-Test, CoT Combo)
+- Technical Tasks (Delimiters, Detailed Output, Automated Code Generation)
 
-### 3. Debate Multiagente com Feedback Humano
-- Definição de número de agentes e rodadas.
-- Ciclo iterativo: Leitura → Reflexão → Atualização → Pausa para visualização.
-- Feedback estruturado: manter, descartar ou adicionar ideias.
-- Convergência natural + intervenção estratégica do usuário.
+### 3. Multi-Agent Debate with Human Feedback
+- Definition of agent count and rounds.
+- Iterative cycle: Read → Reflect → Update → Pause for review.
+- Structured feedback: keep, discard, or add ideas.
+- Natural convergence + strategic user intervention.
 
 ### 4. Rephrase and Respond (RaR)
-- **Uma etapa** — Modelo reformula e responde no mesmo prompt.
-- **Duas etapas** — Modelo 1 reformula, Modelo 2 responde.
-- **RaR + CoT** — Combinação para máxima precisão.
+- **One-step** — Model rephrases and responds in the same prompt.
+- **Two-step** — Model 1 rephrases, Model 2 responds.
+- **RaR + CoT** — Combination for maximum precision.
 
-### 5. Prompts de Segurança
-- Filtragem de conteúdo sensível (ódio, violência, autolesão).
-- Conformidade ética (anti-viés, anti-discriminação).
-- Detecção de jailbreaking (cenários fictícios, fragmentação, linguagem indireta).
-- Verificação de factualidade (fontes verificáveis, correção de imprecisões).
-- Garantia de privacidade (bloqueio de PII, anonimização).
+### 5. Security Prompts
+- Sensitive content filtering (hate, violence, self-harm).
+- Ethical compliance (anti-bias, anti-discrimination).
+- Jailbreak detection (fictional scenarios, fragmentation, indirect language).
+- Factuality verification (verifiable sources, correction of inaccuracies).
+- Privacy assurance (PII blocking, anonymization).
 
-### 6. Biblioteca Guardrails AI (Python)
-- Guards e Validadores (RegexMatch, RestrictToTopic, DetectPII, BanList, ValidChoices).
-- Validação de código (ValidPython, ValidSQL, ValidJSON).
-- Esquemas com RAIL (XML) ou Pydantic.
-- Mecanismo automático de re-ask.
-- Guardrails Hub com validadores comunitários.
+### 6. Guardrails AI Library (Python)
+- Guards and Validators (RegexMatch, RestrictToTopic, DetectPII, BanList, ValidChoices).
+- Code validation (ValidPython, ValidSQL, ValidJSON).
+- Schemas with RAIL (XML) or Pydantic.
+- Automatic re-ask mechanism.
+- Guardrails Hub with community validators.
 
 ## Supported Agents
 
@@ -64,31 +64,31 @@ Organizados em 7 categorias:
 - Kiro
 - Antigravity
 
-## Instalação
+## Installation
 
-### Instalar Localmente
+### Install Locally
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R skills/prompt-guardrails "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-### Instalar para Desenvolvimento
+### Install for Development
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 ln -sfn "$PWD/skills/prompt-guardrails" "${CODEX_HOME:-$HOME/.codex}/skills/prompt-guardrails"
 ```
 
-## Uso
+## Usage
 
-Invocar a skill:
+Invoke the skill:
 
 ```text
 /prompt-guardrails
 ```
 
-Comandos específicos:
+Specific commands:
 
 ```text
 /prompt-guardrails pattern Direct
@@ -100,49 +100,48 @@ Comandos específicos:
 /prompt-guardrails validate pii
 ```
 
-## Exemplos de Uso
+## Usage Examples
 
-### Criar um Guardrail contra Prompt Injection
+### Create a Guardrail Against Prompt Injection
 ```text
 /prompt-guardrails inject-detector
 ```
-Gera o template SecurityGPT/RunGPT com validação JSON estruturada.
+Generates the SecurityGPT/RunGPT template with structured JSON validation.
 
-### Aplicar Abstain-QA a uma pergunta crítica
+### Apply Abstain-QA to a Critical Question
 ```text
 /prompt-guardrails abstain-qa
 ```
-Gera prompt com cláusula de abstenção e escala de confiança 1-5.
+Generates a prompt with an abstention clause and 1-5 confidence scale.
 
-### Gerar código Python com validação de PII
+### Generate Python Code with PII Validation
 ```text
 /prompt-guardrails validate pii
 ```
-Gera código com Guard + DetectPII configurado.
+Generates code with Guard + DetectPII configured.
 
-### Configurar debate multiagente
+### Configure Multi-Agent Debate
 ```text
 /prompt-guardrails multiagent
 ```
-Configura gerente de agentes com ciclo iterativo e feedback humano.
+Sets up an agent manager with an iterative cycle and human feedback.
 
-## Decisões de Design
+## Design Decisions
 
-- **Baseada em livro acadêmico** — Todos os conceitos vêm do livro "Engenharia de Prompts II" (Sandeco, 2025) e artigos científicos citados.
-- **Dupla abordagem** — Cobre tanto guardrails via prompts (sem código) quanto via biblioteca Python (com código).
-- **Templates prontos** — Fornece templates reutilizáveis para os cenários mais comuns.
-- **Combinação de técnicas** — Incentiva o uso combinado (ex: RaR + CoT + Abstain-QA).
-- **Português brasileiro** — Skill documentada em pt-BR para acessibilidade.
+- **Based on an academic book** — All concepts come from "Engenharia de Prompts II" (Sandeco, 2025) and cited scientific papers.
+- **Dual approach** — Covers both guardrails via prompts (no code) and via Python library (with code).
+- **Ready-made templates** — Provides reusable templates for the most common scenarios.
+- **Technique combination** — Encourages combined use (e.g., RaR + CoT + Abstain-QA).
 
-## Referências Bibliográficas
+## References
 
 - Sandeco. "Engenharia de Prompts II – Guardrails". Copyright © 2025.
-- Bai et al. "Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4". Janeiro 2024.
+- Bai et al. "Principled Instructions Are All You Need for Questioning LLaMA-1/2, GPT-3.5/4". January 2024.
 - Wang et al. "Rephrase and Respond: Let Large Language Models Ask Better Questions for Themselves".
 - Guardrails AI Documentation: https://docs.guardrailsai.com/
 - Guardrails Hub: https://hub.guardrailsai.com/
 
-## Layout do Repositório
+## Repository Layout
 
 ```text
 prompt-guardrails/

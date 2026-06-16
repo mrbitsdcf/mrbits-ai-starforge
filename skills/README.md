@@ -1,17 +1,17 @@
 # Skills
 
-Skills são pacotes de instruções, scripts e assets para ampliar o comportamento de agentes de IA.
+Skills are packages of instructions, scripts, and assets that extend the behavior of AI agents.
 
-Cada skill deve ter:
+Each skill should have:
 
-- `SKILL.md` com metadados e workflow.
-- `README.md` com instalação, uso, parâmetros e validação.
-- Scripts e assets apenas quando necessários.
+- `SKILL.md` with metadata and workflow.
+- `README.md` with installation, usage, parameters, and validation.
+- Scripts and assets only when necessary.
 
-## Índice
+## Index
 
-| Skill | Descrição |
+| Skill | Description |
 | --- | --- |
-| [`aws-terraform-template`](aws-terraform-template/) | Cria um repositório Terraform AWS mínimo com backend S3, configurações de qualidade, testes e instruções para agentes. |
-| [`prompt-guardrails`](prompt-guardrails/) | Guardrails para LLMs — proteção de entradas, filtragem de saídas, design patterns de prompts, debate multiagente, RaR e validação com Guardrails AI (Python). Baseada no livro de Sandeco (2025). |
-| [`prompt-engineering-fundamentals`](prompt-engineering-fundamentals/) | Engenharia de Prompts fundamentais — técnicas básicas, prompt interativo, níveis de controle, Chain-of-Thought, CoVe, KD-CoT e redução de alucinações. Baseada no livro de Sandeco (2024). |
+| [`aws-terraform-template`](aws-terraform-template/) | Creates a minimal Terraform AWS repository with S3 backend, quality configurations, tests, and agent instructions. |
+| [`prompt-guardrails`](prompt-guardrails/) | Guardrails for LLMs — input protection, output filtering, prompt design patterns, multi-agent debate, RaR, and validation with Guardrails AI (Python). Based on Sandeco's book (2025). |
+| [`prompt-engineering-fundamentals`](prompt-engineering-fundamentals/) | Fundamental prompt engineering — basic techniques, interactive prompting, control levels, Chain-of-Thought, CoVe, KD-CoT, and hallucination reduction. Based on Sandeco's book (2024). |

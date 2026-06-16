@@ -1,21 +1,21 @@
 # MCPs
 
-Diretório para servidores MCP, configurações, exemplos e documentação de integração.
+Directory for MCP servers, configurations, examples, and integration documentation.
 
-## Como adicionar um MCP
+## How to Add an MCP
 
-Cada MCP deve ficar em:
+Each MCP should reside in:
 
 ```text
-mcps/<nome-do-mcp>/
+mcps/<mcp-name>/
 ```
 
-Documente:
+Document:
 
-- Instalação.
-- Execução local.
-- Variáveis de ambiente.
-- Escopos de permissão.
-- Dados acessados ou persistidos.
-- Validação.
-- Considerações de segurança.
+- Installation.
+- Local execution.
+- Environment variables.
+- Permission scopes.
+- Data accessed or persisted.
+- Validation.
+- Security considerations.

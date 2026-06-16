@@ -1,42 +1,42 @@
-## Objetivo
+## Purpose
 
-Descreva por que esta mudança é necessária.
+Describe why this change is necessary.
 
-## Tipo de mudança
+## Type of Change
 
-- [ ] Correção
-- [ ] Novo artefato
-- [ ] Melhoria de artefato existente
-- [ ] Documentação
-- [ ] Segurança
-- [ ] Manutenção
+- [ ] Fix
+- [ ] New artifact
+- [ ] Improvement to existing artifact
+- [ ] Documentation
+- [ ] Security
+- [ ] Maintenance
 
-## Artefatos afetados
+## Affected Artifacts
 
-Liste skills, prompts, MCPs ou documentos alterados.
+List skills, prompts, MCPs, or documents changed.
 
-## Validação
+## Validation
 
-Descreva o que foi testado ou revisado.
+Describe what was tested or reviewed.
 
-- [ ] Documentação atualizada
-- [ ] Exemplos revisados
-- [ ] Validação manual executada
-- [ ] Validação automatizada executada
-- [ ] Não se aplica
+- [ ] Documentation updated
+- [ ] Examples reviewed
+- [ ] Manual validation performed
+- [ ] Automated validation performed
+- [ ] Not applicable
 
-## Segurança
+## Security
 
-- [ ] Não há segredos, tokens ou credenciais reais.
-- [ ] Permissões e riscos foram documentados quando aplicável.
-- [ ] Scripts não executam ações destrutivas por padrão.
+- [ ] No secrets, tokens, or real credentials.
+- [ ] Permissions and risks documented where applicable.
+- [ ] Scripts do not perform destructive actions by default.
 
-## Compatibilidade
+## Compatibility
 
-- [ ] Compatível com versões anteriores
-- [ ] Mudança incompatível documentada
-- [ ] Não se aplica
+- [ ] Backward compatible
+- [ ] Breaking change documented
+- [ ] Not applicable
 
-## Observações
+## Notes
 
-Inclua limitações, riscos residuais ou próximos passos.
+Include limitations, residual risks, or next steps.

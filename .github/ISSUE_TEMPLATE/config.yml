@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Relato de segurança
+  - name: Security report
     url: https://github.com/MrBiTs/mrbits-ai-starforge/security/advisories/new
-    about: Use este canal para relatar vulnerabilidades de forma privada.
+    about: Use this channel to report vulnerabilities privately.

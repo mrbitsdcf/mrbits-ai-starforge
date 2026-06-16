@@ -1,41 +1,41 @@
 # Kiro Steering — Prompt Guardrails
 
-Use este steering para `/prompt-guardrails` e seus subcomandos. Aplique guardrails de segurança, design patterns de prompts, e validação programática para LLMs.
+Use this steering for `/prompt-guardrails` and its subcommands. Apply security guardrails, prompt design patterns, and programmatic validation for LLMs.
 
-## Quando Ativar
+## When to Activate
 
-- Usuário pede para criar prompts seguros ou proteger contra injection/jailbreak.
-- Usuário quer validar saídas de IA (formato, conteúdo, ética, privacidade).
-- Usuário menciona guardrails, segurança de prompts, ou Guardrails AI.
-- Usuário quer aplicar design patterns a prompts existentes.
-- Usuário quer implementar debate multiagente ou RaR.
+- User asks to create secure prompts or protect against injection/jailbreak.
+- User wants to validate AI outputs (format, content, ethics, privacy).
+- User mentions guardrails, prompt security, or Guardrails AI.
+- User wants to apply design patterns to existing prompts.
+- User wants to implement multi-agent debate or RaR.
 
-## Princípios
+## Principles
 
-1. Segurança primeiro — nunca gere conteúdo que contorne guardrails.
-2. Sempre forneça exemplos de teste (positivo e negativo) ao criar guardrails.
-3. Documente limitações de cada abordagem recomendada.
-4. Combine técnicas quando o cenário exigir (RaR + CoT, Abstain-QA + Inject Detector).
-5. Para validação programática, use a biblioteca Guardrails AI com Python.
+1. Security first — never generate content that bypasses guardrails.
+2. Always provide test examples (positive and negative) when creating guardrails.
+3. Document limitations of each recommended approach.
+4. Combine techniques when the scenario requires it (RaR + CoT, Abstain-QA + Inject Detector).
+5. For programmatic validation, use the Guardrails AI library with Python.
 
-## Fluxo de Decisão
+## Decision Flow
 
 ```
-Entrada do usuário
-├─ Precisa proteger contra injection? → Inject Detector (SecurityGPT/RunGPT)
-├─ Modelo pode alucinar? → Abstain-QA com nível de confiança
-├─ Pergunta vaga ou ambígua? → Rephrase and Respond (RaR)
-├─ Precisa validar formato/conteúdo? → Guardrails AI (Python)
-├─ Debate entre perspectivas? → Multiagente com feedback humano
-├─ Quer melhorar prompt existente? → Prompt Design Patterns
-└─ Precisa de segurança ética? → Prompts de segurança (5 tipos)
+User input
+├─ Needs protection against injection? → Inject Detector (SecurityGPT/RunGPT)
+├─ Model may hallucinate? → Abstain-QA with confidence level
+├─ Vague or ambiguous question? → Rephrase and Respond (RaR)
+├─ Needs format/content validation? → Guardrails AI (Python)
+├─ Debate between perspectives? → Multi-agent with human feedback
+├─ Wants to improve an existing prompt? → Prompt Design Patterns
+└─ Needs ethical security? → Security prompts (5 types)
 ```
 
-## Referência Rápida
+## Quick Reference
 
-- Inject Detector: separa `<segurança>` + `<executor>`, retorna JSON {safe, reason, log}
-- Abstain-QA: "Se não tiver certeza, responda 'Não tenho certeza'. Avalie confiança 1-5."
-- RaR 1-etapa: "Reescreva a pergunta de forma mais clara. Em seguida, responda."
-- RaR 2-etapas: Etapa 1 reformula, Etapa 2 responde baseado na reformulação.
-- Design Patterns: 26 padrões em 7 categorias (ver SKILL.md para catálogo completo).
-- Guardrails AI: `Guard().use(Validador, params, on_fail="exception")`
+- Inject Detector: separates `<security>` + `<executor>`, returns JSON {safe, reason, log}
+- Abstain-QA: "If you are not sure, respond with 'I'm not sure'. Rate confidence 1-5."
+- RaR 1-step: "Rewrite the question more clearly. Then answer."
+- RaR 2-step: Step 1 rephrases, Step 2 responds based on the reformulation.
+- Design Patterns: 26 patterns in 7 categories (see SKILL.md for full catalog).
+- Guardrails AI: `Guard().use(Validator, params, on_fail="exception")`
