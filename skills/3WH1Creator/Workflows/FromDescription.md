@@ -18,13 +18,6 @@ Faça as perguntas na ordem **Who → What → Where → How**, **uma por mensag
 
 **Verbose = FALSE (rule 6):** abra DIRETO com a pergunta. Sem frase de enquadramento antes ("Vamos construir...", "Ótimo!", "Para começar..."). A primeira coisa na mensagem é a linha `Pergunta:`. Formato de cada pergunta:
 
-```
-Pergunta: <texto>
-
-  * Sugestão 1: ...
-  * Sugestão 2: ...
-  * Sugestão 3: ...
-```
 
 Perguntas canônicas:
 
