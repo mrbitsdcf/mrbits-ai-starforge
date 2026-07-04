@@ -66,7 +66,7 @@ grande plano geral · plano geral · plano inteiro · plano americano · plano m
 
 ## Especificação de saída (formato exato)
 
-Cada bloco de prompt abre com uma **linha de persona de especialista** + a frase `Crie uma imagem com as seguintes características:`, então os quatro pilares. Persona escolhida pelo estilo (fotorrealista → diretor de fotografia/fotógrafo; ilustração → ilustrador/diretor de arte). Sem nomes de artistas reais (R5).
+Cada bloco de prompt abre com uma **linha de persona de especialista** + a frase localizada equivalente a `Crie uma imagem com as seguintes características:`, então os quatro pilares. Em PT-BR, use a frase em português; em EN, use a tradução fiel em inglês. Persona escolhida pelo estilo (fotorrealista → diretor de fotografia/fotógrafo; ilustração → ilustrador/diretor de arte). Sem nomes de artistas reais (R5).
 
 ### prompt pt-br (~200 palavras no corpo 3W1H)
 ~~~plaintext
